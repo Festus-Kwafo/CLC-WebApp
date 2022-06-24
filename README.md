@@ -32,7 +32,7 @@ py manage.py migrate
 Install npm packages for preprocessing static files.
 
 ```bash
-npm
+npm install
 ```
 
 ## Running
