@@ -394,6 +394,9 @@ footer {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.2);
   }
+  a{
+    text-decoration: none;
+  }
 }
 
 .sermon-info {
@@ -457,3 +460,16 @@ footer {
   color: $white;
 }
 
+/*Experience Section*/
+.experience-section{
+  width: 1200px;
+  h2{
+    
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+  }
+}
+
+.card-experience{
+  width: 21rem;
+}
