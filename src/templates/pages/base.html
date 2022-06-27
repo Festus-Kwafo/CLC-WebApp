@@ -1,25 +1,28 @@
 {%load static%}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <title>{% block page_title %}Homepage{% endblock %}</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <title>{% block page_title %}Homepage{% endblock %}</title>
 </head>
+
 <body>
   <!-- ======= Header/Navbar ======= -->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <a class="logo" href="#">
         <img src="{%static 'images/logo.png' %}" alt="logo">
-      </a>  
+      </a>
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
 
@@ -45,12 +48,14 @@
         </ul>
       </div>
       <form action="" method="">
-        <button type="button" class="btn btn-b-n search-bar mx-2" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+        <button type="button" class="btn btn-b-n search-bar mx-2" data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01">
           <input type="text" class="border-0 search-input" placeholder="Search for Sermons here">
           <i class="bi bi-search"></i>
-        </button>  
+        </button>
       </form>
-      <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse search-icon" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+      <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse search-icon"
+        data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
         <i class="bi bi-search"></i>
       </button>
 
@@ -59,10 +64,74 @@
       </a>
 
     </div>
-  </nav><!-- End Header/Navbar -->
+  </nav>
+  <!-- End Header/Navbar -->
 
-{% block content %}
+  {% block content %}
 
-{% endblock %}
+  {% endblock %}
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-3">
+          <img src="{%static 'images/logo_white.png' %}" alt="">
+          <div class="pt-4">
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget varius enim. Etiam vehicula
+              semper massa, sit amet consequat libero.
+            </span>
+          </div>
+          <div class="social-media d-flex justify-content-evenly pt-4">
+            <a href=""><i class='bx bxl-youtube'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""> <i class='bx bxl-facebook'></i></a>
+            <a href=""> <i class='bx bxl-instagram'></i></a>
+          </div>
+
+        </div>
+
+        <div class="col-md-9">
+          <div class="row pt-3">
+            <div class="col-3">
+              <h4>About</h4>
+              <a href="">Mission & Ministry <br></a>
+              <a href="">Leadership & Beliefs </a>
+            </div>
+            <div class="col-3">
+              <h4>Ministries</h4>
+              <a href="">Sunday School<br></a>
+              <a href="">Outreach</a>
+            </div>
+            <div class="col-3">
+              <h4>Branches</h4>
+              <a href="">Find a Location <br></a>
+              <a href="">Watch Party</a>
+            </div>
+            <div class="col-3">
+              <h4>Media</h4>
+              <a href="">Sermons <br></a>
+              <a href="">Podcast</a>
+            </div>
+          </div>
+          <div class="row pt-5">
+            <div class="col-6">
+              <h4>Contact Us</h4>
+              <span class="align-items-center"><i class='bx bx-phone font-14 pt-2'></i> <a href="tel:+233555358099">+233555358099</a></span><br>
+              <span><i class='bx bx-envelope font-14'></i> <a href="emailto:christsabounding@gmail.com">christsabounding@gmail.com</a></span>
+            </div>
+            <div class="col-6"><h4>Useful links</h4>
+              <span class="align-items-center"><a href=""><i class='bx bx-chevron-right font-14 pt-2'></i>Sunday School Donation</a></span><br>
+              <span><i class='bx bx-chevron-right font-14'></i> <a href="">Village Outreach</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
 </body>
+
 </html>
