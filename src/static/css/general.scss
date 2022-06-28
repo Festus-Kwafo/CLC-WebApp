@@ -373,7 +373,6 @@ footer {
   margin-top: 7rem;
   margin-bottom: 3rem;
   height: 620px;
-  width: 1200px;
 
 
   img{
@@ -462,15 +461,9 @@ footer {
 
 /*Experience Section*/
 .experience-section{
-  width: 1200px;
   h2{
     font-family: "Inter", sans-serif;
     font-weight: 600;
-  }
-  span{
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 1.5em;
   }
   a{
     text-decoration: none;
@@ -480,15 +473,15 @@ footer {
   .card{
     transition: transform .4s;
     padding-top: 5px;
+    width: 95%;
+    margin: auto;
   }
+
   .card:hover{
     transform: scale(1.04);
   }
 }
 
-.card-experience{
-  width: 21rem;
-}
 
 .main-event{
   position: relative;
@@ -506,4 +499,28 @@ footer {
 .event-info{
   position: absolute;
   bottom: 0px;
+}
+
+.announcement-section{
+  height: 100%;
+  i .bx-chevron-right{
+    font-size: 1.5em;
+  }
+  .show-more{
+    color: $accent;
+  }
+  .upcoming-event{
+    border: 2px solid rgba(217, 217, 217, 0.4);
+    // margin-left: 8px;
+    border-radius: 8px;
+  }
+  .social-media{
+    border: 2px solid rgba(217, 217, 217, 0.4);
+    border-radius: 8px;
+    bottom: 0;
+
+    i{
+      font-size: 3rem;
+    }
+  }
 }
