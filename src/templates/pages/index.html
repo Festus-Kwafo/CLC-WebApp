@@ -56,7 +56,7 @@
             
             <div class="announcement-section col-lg-4">
                 <div class="row">
-                  <div class="upcoming-event">
+                  <div class="upcoming-event shadow">
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item border-0 heading">
                         <h4>Upcoming Activities</h4>
@@ -65,64 +65,73 @@
                     </li>
                       <li class="list-group-item border-0">
                         <div class="row">
-                            <div class="col-1"><i class='bx bx-chevron-right'></i></div>
+                            <div class="col-1"><i class='bx bx-chevron-right font-size-14'></i></div>
                         <div class="col-11">
                             <h5>Prayer Retreat</h5>
                             <span>Prayer retreat with Rev. Mubarak Kwota <br></span>
-                            <span class="me-3"><i class='bx bx-calendar'></i>Mon - Wed</span>
-                            <span><i class='bx bx-time-five'></i>6:30pm each night</span>
+                            <i class='bx bx-calendar me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">Mon - Fri</span>
+                            <i class='bx bx-time-five me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">6:30pm each night</span>
                         </div>
                         </div>
                     </li>
                       <li class="list-group-item border-0">
                         <div class="row">
-                            <div class="col-1"><i class='bx bx-chevron-right'></i></div>
+                            <div class="col-1"><i class='bx bx-chevron-right font-size-14'></i></div>
                         <div class="col-11">
                             <h5>Young People’s Week</h5>
                             <span>Join us for exciting programs for YPW celebration<br></span>
-                            <span class="me-3"><i class='bx bx-calendar'></i>Thur - Sat</span>
-                            <span><i class='bx bx-time-five'></i>6:30pm each night</span>
+                            <i class='bx bx-calendar me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">Thur - Sat</span>
+                            <i class='bx bx-time-five me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">6:30pm each night</span>
                         </div>
                         </div>
                     </li>
                       <li class="list-group-item border-0">
                         <div class="row">
-                            <div class="col-1"><i class='bx bx-chevron-right'></i></div>
+                            <div class="col-1"><i class='bx bx-chevron-right font-size-14'></i></div>
                         <div class="col-11">
                             <h5>Leader’s meeting</h5>
                             <span>All organizational heads are encouraged to be present<br></span>
-                            <span class="me-3"><i class='bx bx-calendar'></i>Mon</span>
-                            <span><i class='bx bx-time-five'></i>8:00am</span>
+                            <i class='bx bx-calendar me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">Mon</span>
+                            <i class='bx bx-time-five me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">8:00am</span>
                         </div>
                         </div>
                     </li>
                       <li class="list-group-item border-0">
                         <div class="row">
-                            <div class="col-1"><i class='bx bx-chevron-right'></i></div>
+                            <div class="col-1"><i class='bx bx-chevron-right font-size-14'></i></div>
                         <div class="col-11">
-                            <h5 class="show-more">Show More</h5>
+                            <h5 ><a class="show-more" href="">Show More</a> </h5>
                             <span>Learn more on other activities happening this week...<br></span>
                         </div>
                         </div>
                     </li>
                     </ul>
                   </div>
-                  <div class="social-media text-center mt-3">
+                  <div class="social-media text-center mt-3 shadow">
                       <h4 class="pt-1">Follow Christ’s Love Church</h4>
                     <div class=" d-flex justify-content-evenly py-3">
                       <a href=""><i class='bx bxl-youtube'></i></a>
                     <a href=""><i class='bx bxl-twitter'></i></a>
                     <a href=""> <i class='bx bxl-facebook'></i></a>
-                    <a href=""> <i class='bx bxl-instagram'></i></a>
+                    <a href=""> <img src="{%static 'images/Instagram.svg'%}" alt=""></a>
                     </div>
-
-                    
-                    
                   </div>
                   </div>
             </div>
         </div>
     </div>
+</section>
+
+<section class="giving-section">
+  <div class="giving-text text-center">
+    <h1>Giving</h1>
+    <h2><img src="{%static 'images/Vectorquote.svg' %}" alt=""></h2>
+    <h2>Each of you should give what you have decided in your heart to give,
+      not reluctantly or under compulsion, for  God loves a cheerful giver</h2>
+    <h2>2 Corinthians 9:7</h2>
+    <h2><img src="{%static 'images/Vectorquote1.svg' %}" alt=""></h2>
+    <a href="" class="btn btn-primary">Give Today</a>
+  </div>
 </section>
 
 {% endblock %}
