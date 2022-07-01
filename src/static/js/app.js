@@ -93,7 +93,10 @@
       center: true,
       margin: 0,
       responsiveClass: true,
-      nav: false,
+      nav: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+
       responsive: {
         0: {
           items: 1,
@@ -107,7 +110,7 @@
         1000: {
           items: 3,
           nav: true
-        }
+        },
       }
     });
 
