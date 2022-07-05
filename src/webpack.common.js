@@ -27,11 +27,5 @@ module.exports = {
             inject: "body"
         }),
         new CleanWebpackPlugin(),
-        
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery'
-          }),
     ],
 }
