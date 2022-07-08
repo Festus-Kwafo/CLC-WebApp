@@ -13,4 +13,22 @@ class AboutView(View):
 
     def get(self, request):
         return render(request, self.template_name)
+        
+class SermonView(View):
+    template_name = "templates/pages/about.html"
+
+    def get(self, request):
+        return render(request, self.template_name)
+
+class GivingView(View):
+    template_name = "templates/pages/about.html"
+
+    def get(self, request):
+        return render(request, self.template_name)
+
+class OutreachView(View):
+    template_name = "templates/pages/about.html"
+
+    def get(self, request):
+        return render(request, self.template_name)
 
