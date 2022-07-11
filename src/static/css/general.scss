@@ -249,50 +249,6 @@ footer {
   }
 }
 
-/* Prelaoder */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 9999;
-  overflow: hidden;
-  background: $white;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #f2f2f2;
-  border-top: 6px solid $accent;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -341,7 +297,7 @@ footer {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #2eca6a;
+  border-top: 6px solid $accent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -669,6 +625,13 @@ footer {
   display: flex;
 }
 
+.mission-statement{
+  background-image: url('/static/images/M&Mback.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  width: 100%;
+}
 .mission-statement.heading{
   font-weight: 600;
 }
@@ -697,14 +660,46 @@ footer {
   }
 
   .counter{
-    position: absolute;
     background-color: $footer-color;
     border-radius: 8px;
+    padding: 20px;
 
     span{
-      position: relative;
       color: $white;
-      font-size: 24px;
+      font-size: 36px;
+      font-weight: 800;
+    }
+  }
+}
+.leadership{
+  h3 {
+    width: 100%; 
+    text-align: center;
+    position: relative;
+  }
+  
+  h3 span {
+    background: #fff; 
+    padding: 0 20px;
+  }
+  
+  h3:before {
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    z-index: -1;
+    height: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.458);
+  }
+  .leader-profile{
+    a{
+      color: $accent;
+      text-decoration: none;
+      
+    }
+    h2{
       font-weight: 600;
     }
   }
