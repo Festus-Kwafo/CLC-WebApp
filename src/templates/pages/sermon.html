@@ -1,7 +1,48 @@
 {% extends '../../dist/templates/pages/base.html' %}
-{% block page_title %}Sermon || CLC {% endblock %}
+{% block page_title %}Sermons - Christ's Love Church {% endblock %}
 {% load static %}
 
 {% block content %}
+<section class="mt-5">
 
+        <div class="container sermon-section">
+            <img src="{%static 'images/pastor1.jpg' %}" class="" alt="Sermon-img">
+            <video id="video" preload="auto" loop>
+                <source src="{% static 'videos/Sermonsgif.mp4'%}" type="video/mp4">
+            </video>
+
+    
+            <div class="layer"></div>
+            <div class="sermon-info pb-4 ms-2">
+                <button class="btn btn-accent btn-latest rounded-pill">Latest Episode</button>
+                <h3 class="sermon-title">Sharing the love of Christ</h3>
+                <div class="col">
+                    <a type="button" class="btn-lg btn-primary m-1" href="">WATCH EPISODE</a>
+                    <a type="button" class="btn-lg btn-outline m-1" href="">MORE SERMONS</a>
+                </div>
+
+        </div>            
+    </div>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type = "text/javascript">
+
+        $(document).ready(function () {
+            $("#video").css("display", "none"); //HIDE THE VIDEO INITIALLY
+            $(".sermon-section").hover(function () 
+                    {
+                    $("#video").css("display", "block"); //SHOW THE VIDEO ON HOVER
+                        $(this).children("video")[0].play();
+                    }, 
+    
+            function () {
+                var el = $(this).children("video")[0];
+                el.pause();
+                $("#video").css("display", "none");
+
+                el.currentTime = 0;
+            });
+        });
+    </script>
 {%endblock%}
