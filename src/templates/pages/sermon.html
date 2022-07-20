@@ -3,39 +3,118 @@
 {% load static %}
 
 {% block content %}
-<section class="mt-5">
+<section class="">
 
-        <div class="container sermon-section">
-            <img src="{%static 'images/pastor1.jpg' %}" class="" alt="Sermon-img">
-            <video id="video" preload="auto" loop>
-                <source src="{% static 'videos/Sermonsgif.mp4'%}" type="video/mp4">
-            </video>
-
-    
-            <div class="layer"></div>
+    <div class="sermon-banner">
+        <img src="{%static 'images/pastor1.jpg' %}" class="desktop-img" alt="Sermon-img">
+        <img src="{%static 'images/pastor2.jpg' %}" class="mobile-img active" alt="Sermon-img">
+        <div class="layer"></div>
+        <div class="container">
             <div class="sermon-info pb-4 ms-2">
                 <button class="btn btn-accent btn-latest rounded-pill">Latest Episode</button>
-                <h3 class="sermon-title">Sharing the love of Christ</h3>
+                <h3 class="sermon-title pt-3">Sharing the love of Christ</h3>
                 <div class="col">
-                    <a type="button" class="btn-lg btn-primary m-1" href="">WATCH EPISODE</a>
-                    <a type="button" class="btn-lg btn-outline m-1" href="">MORE SERMONS</a>
+                    <a type="button" class="text-center px-3" href=""><i class="bi bi-play"></i><br>Play</a>
+                    <a type="button" class="text-center px-3" href=""><i class="bi bi-download"></i> <br>Download</a>
+                    <a type="button" class="text-center px-3" href=""><i class="bi bi-file-earmark-text"></i>
+                        <br>Read</a>
+                    <a type="button" class="text-center px-3" href=""><i class="bi bi-share"></i> <br>Share</a>
                 </div>
-
-        </div>            
+            </div>
+        </div>
     </div>
+</section>
 
-    </section>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script type = "text/javascript">
+<section class="search-sermon pb-3">
+    <div class="container">
+        <h2>Search Sermon</h2>
+        <div class="row text-center">
+            <form action="" method="">
+                <button type="button"
+                    class="btn btn-b-n form-control justify-content-center sermon-search  search-bar mx-2"
+                    data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
+                    <input type="text" class="border-0  search-input"
+                        placeholder="Search sermons by sermon title, dates, tags etc">
+                    <i class="bi bi-sliders"></i>
+                </button>
+                <button class="btn btn-secondary mt-3" type="submit">Search Sermon</button>
+            </form>
+        </div>
+    </div>
+</section>
 
-        $(document).ready(function () {
-            $("#video").css("display", "none"); //HIDE THE VIDEO INITIALLY
-            $(".sermon-section").hover(function () 
-                    {
-                    $("#video").css("display", "block"); //SHOW THE VIDEO ON HOVER
-                        $(this).children("video")[0].play();
-                    }, 
-    
+<section class="recent-sermon">
+    <div class="container">
+        <h2>Recent Sermon</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{%static 'images/pastor2.jpg'%}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">God’s love for us</h4>
+                                <p class="card-text"><span class="text-muted">Speaker: </span> Pastor Mubarak Kwota</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <div class="col">
+                                    <a type="button" class="text-center px-3" href=""><i
+                                            class="bi bi-play"></i><br>Play</a>
+                                    <a type="button" class="text-center px-3" href=""><i class="bi bi-download"></i>
+                                        <br>Download</a>
+                                    <a type="button" class="text-center px-3" href=""><i
+                                            class="bi bi-file-earmark-text"></i>
+                                        <br>Read</a>
+                                    <a type="button" class="text-center px-3" href=""><i class="bi bi-share"></i>
+                                        <br>Share</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card mb-3">
+                    <div class="row g-0 ">
+                        <div class="col-md-4">
+                            <img src="" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title">God’s love for us</h4>
+                                <p class="card-text"><span class="text-muted">Speaker: </span> Pastor Mubarak Kwota</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                <div class="col">
+                                    <a type="button" class="text-center px-3" href=""><i
+                                            class="bi bi-play"></i><br>Play</a>
+                                    <a type="button" class="text-center px-3" href=""><i class="bi bi-download"></i>
+                                        <br>Download</a>
+                                    <a type="button" class="text-center px-3" href=""><i
+                                            class="bi bi-file-earmark-text"></i>
+                                        <br>Read</a>
+                                    <a type="button" class="text-center px-3" href=""><i class="bi bi-share"></i>
+                                        <br>Share</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#video").css("display", "none"); //HIDE THE VIDEO INITIALLY
+        $(".sermon-section").hover(function () {
+            $("#video").css("display", "block"); //SHOW THE VIDEO ON HOVER
+            $(this).children("video")[0].play();
+        },
+
             function () {
                 var el = $(this).children("video")[0];
                 el.pause();
@@ -43,6 +122,6 @@
 
                 el.currentTime = 0;
             });
-        });
-    </script>
+    });
+</script>
 {%endblock%}
