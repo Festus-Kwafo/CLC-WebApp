@@ -1,6 +1,6 @@
 # CLC-WebApp
 
-A Website and portal for Christ's Lovers to look for information and upload information.
+A Website and portal for Christ's Love Church to Manage their System.
 
 
 
