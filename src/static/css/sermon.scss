@@ -64,8 +64,38 @@
 
   }
   .recent-sermon{
-    
-    img{
-        height: 80%;
+    a{
+      text-decoration: none;
+    }
+    i{
+      font-size: 2em;
+      color: $black;
+    }
+    i:hover{
+      color: $black;
+    }
+    .card{
+      border: none;
+    }
+  }
+  .popular-sermon{
+    margin-top: 2em;
+    a{
+      text-decoration: none;
+    }
+    i{
+      font-size: 2em;
+      color: $black;
+    }
+    i:hover{
+      color: $black;
+    }
+    .card{
+      border: none;
+    }
+  }
+  .pagination{
+    .active{
+      color: $black;
     }
   }

@@ -32,3 +32,14 @@ class OutreachView(View):
     def get(self, request):
         return render(request, self.template_name)
 
+        
+class StoreView(View):
+    template_name = "templates/pages/store.html"
+    def get(self, request):
+        return render(request, self.template_name)
+
+class OrderView(View):
+    template_name = "templates/pages/order.html"
+    def get(self, request):
+        return render(request, self.template_name)
+
