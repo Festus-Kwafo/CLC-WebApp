@@ -183,3 +183,19 @@
     }
   }
 
+  .form-class{
+    background-color: #F3F3F3;
+    border-radius: 15px;
+
+    hr{
+      background-color: $secondary;
+      height: 2px;
+    }
+    .del-i{
+      color: red;
+      cursor: pointer;
+    }
+  }
+
+
+
