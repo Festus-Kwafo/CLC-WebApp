@@ -43,3 +43,8 @@ class OrderView(View):
     def get(self, request):
         return render(request, self.template_name)
 
+class BranchesView(View):
+    template_name = "templates/pages/branches.html"
+    def get(self, request):
+        return render(request, self.template_name)
+
