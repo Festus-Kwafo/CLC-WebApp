@@ -15,6 +15,7 @@
 
 .products {
   .card {
+    width: 250px;
     border: 0;
     transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
       0.3s box-shadow,
@@ -74,6 +75,12 @@
     display: inline-block;
     vertical-align: middle;
   }
+  .remove{
+    padding: 0.4em;
+    background-color: rgba(255, 160, 18, 0.5);
+  }
+
+
   @media (max-width: 768px) {
     .card-img-top {
       max-height: 250px;
@@ -115,12 +122,27 @@
     box-shadow: -1px 6px 19px rgba(10, 121, 247, 0.25);
     border-radius: 100px;
   }
+  .btn-order {
+    background: #26A9E1;
+    border-radius: 8px;
+    color: #ffffff;
+    fill: #ffffff;
+    border: none;
+    text-decoration: none;
+    outline: 0;
+  }
   .bg-danger {
     font-size: 1rem;
   }
+  .card-title{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+  }
   .price-hp {
-    font-size: 1rem;
-    font-weight: 600;
+    color: #505050;
+    font-weight: 400;
+    font-size: 1em;
   }
 
   .box {
