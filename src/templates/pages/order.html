@@ -12,149 +12,92 @@
     </div>
 </section>
 
-<section class="my-3">
+<section class="products my-3">
     <div class="container">
         <h2>Place Order</h2>
-        <h4>Kindly provide necessary information for the form below to complete order</h4>
-
-        <div class="form-class pb-3">
-            <form action="" class="my-4 w-75 m-auto" method="post">
-                <div class="row g-3">
-                    <div class="col">
-                        <label for="first_name">First Name</label>
-                        <input type="text" class="form-control" placeholder="John" aria-label="First name">
-                    </div>
-                    <div class="col">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" class="form-control" placeholder="Doe" aria-label="Last name">
-                    </div>
-                </div>
-                <div class="row g-3 my-2">
-                    <div class="col">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" name="email" placeholder="johndoe@gmail.com"
-                            aria-label="First name">
-                    </div>
-                    <div class="col">
-                        <label for="last_name">Phone Number</label>
-                        <input type="text" class="form-control" placeholder="+233555555555" aria-label="Last name">
-                    </div>
-                </div>
-                <hr>
-                <div class="row g-3 my-2">
-                    <div class="col-lg-6">
-                        <label for="email">Products / Souvenirs</label>
-                        <input type="text" class="form-control" name="email" placeholder="Teen Week Hoodie"
-                            aria-label="First name">
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="row g-3">
-                            <div class="col-sm-6 col-lg-4">
-                                <label for="last_name">Quantity</label>
-                                <div class="input-group ">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="quantity-left-minus btn btn-number"
-                                            data-type="minus" data-field="">
-                                            <i class="bi bi-dash-lg "></i>
-                                        </button>
-                                    </span>
-                                    <input type="text" id="quantity" name="quantity"
-                                        class="form-control input-number text-center" value="10" min="1" max="100">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="quantity-right-plus btn btn-number"
-                                            data-type="plus" data-field="">
-                                            <i class="bi bi-plus-lg "></i>
-                                        </button>
-                                    </span>
-                                </div>
+        <span>Kindly provide necessary information for the form below to complete order</span>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-3 my-3">
+                <div class="card h-100 shadow-sm"> <img src="{%static 'images/hoodie.png'%}" class="card-img-top"
+                        alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Teen Week Hoodie</h5>
+                        <div class="clearfix mb-2">
+                            <div class="d-flex justify-content-between">
+                                    <span class="float-start price-hp py-2">USD 20.00</span>
+                                    <div class="remove py-2"><i class="bi bi-trash3"></i></div>  
                             </div>
-                            <div class="col-sm-6 col-lg-8">
-                                <div class="col">
-                                    <label for="color">Color</label>
-                                    <i class="bi bi-x-lg float-end del-i"></i>
+                            <div class="row text-center d-flex justify-content-center mt-3">
+                                <div class="col-3 py-2">  
+                                    <button type="button" class="btn-primary"><i class="bi bi-dash"></i></button>
                                 </div>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select Product Color</option>
-                                    <option value="1">Red</option>
-                                    <option value="2">Blue</option>
-                                    <option value="3">BLack</option>
-                                </select>
+                                <div class="col-6 py-2"><span class="order-num  ">2</span></div>
+                                <div class="col-3 py-2"><button class="btn-primary"><i class="bi bi-plus"></i></button></div>
                             </div>
+                            
+                            
                         </div>
-
-                    </div>
-                </div>
-                <div class="row g-3 my-2">
-                    <div class="col-lg-6">
-                        <label for="email">Products / Souvenirs</label>
-                        <input type="text" class="form-control" name="email" placeholder="Teen Week Hoodie"
-                            aria-label="First name">
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="row g-3">
-                            <div class="col-sm-6 col-lg-4">
-                                <label for="last_name">Quantity</label>
-                                <div class="input-group ">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="quantity-left-minus btn btn-number"
-                                            data-type="minus" data-field="">
-                                            <i class="bi bi-dash-lg"></i>
-                                        </button>
-                                    </span>
-                                    <input type="text" id="quantity" name="quantity"
-                                        class="form-control input-number text-center" value="10" min="1" max="100">
-                                    <span class="input-group-btn">
-                                        <button type="button" class="quantity-right-plus btn btn-number"
-                                            data-type="plus" data-field="">
-                                            <i class="bi bi-plus-lg"></i>
-                                        </button>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-8">
-                                <div class="col">
-                                    <label for="color">Color</label>
-                                    <i class="bi bi-x-lg float-end del-i"></i>
-                                </div>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select Product Color</option>
-                                    <option value="1">Red</option>
-                                    <option value="2">Blue</option>
-                                    <option value="3">BLack</option>
-                                </select>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <hr>
-                <div class="row g-3 mb-3">
-                    <div class="col-lg-8">
-                        <label for="address">Address</label>
-                        <input type="text" class="form-control" placeholder="eg: Tema, Sakumono Estates - SK/456"
-                            aria-label="First name">
-                    </div>
-                    <div class="col-lg-4">
-                        <label for="gps_address">GPS Address</label>
-                        <input type="text" class="form-control" placeholder="GT-273-556" aria-label="Last name">
-                    </div>
-                </div>
-                <div class="row g-3">
-                    <div class="col-lg-6">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text bg-white border-end-0" id="basic-addon1"><i
-                                    class="bi bi-geo-alt"></i></span>
-                            <input type="text" class="form-control border-start-0"
-                                placeholder="Tap here to pick the nearest landmark to your address..."
-                                aria-label="Username" aria-describedby="basic-addon1">
+                        
+                        <div class="text-center">
+                            
                         </div>
                     </div>
                 </div>
-                <div class="m-auto">
-                    <button type="submit" class="btn btn-secondary">PROCEED TO ORDER</button>
+            </div>
+            <div class="col-lg-3 my-3">
+                <div class="card h-100 shadow-sm"> <img src="{%static 'images/hoodie.png'%}" class="card-img-top"
+                        alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Teen Week Hoodie</h5>
+                        <div class="clearfix mb-2">
+                            <div class="d-flex justify-content-between">
+                                    <span class="float-start price-hp py-2">USD 20.00</span>
+                                    <div class="remove py-2"><i class="bi bi-trash3"></i></div>  
+                            </div>
+                            <div class="row text-center d-flex justify-content-center mt-3">
+                                <div class="col-3 py-2">  
+                                    <button type="button" class="btn-primary"><i class="bi bi-dash"></i></button>
+                                </div>
+                                <div class="col-6 py-2"><span class="order-num  ">2</span></div>
+                                <div class="col-3 py-2"><button class="btn-primary"><i class="bi bi-plus"></i></button></div>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                        <div class="text-center">
+                            
+                        </div>
+                    </div>
                 </div>
-            </form>
+            </div>
+            <div class="col-lg-3 my-3">
+                <div class="card h-100 shadow-sm"> <img src="{%static 'images/hoodie.png'%}" class="card-img-top"
+                        alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Teen Week Hoodie</h5>
+                        <div class="clearfix mb-2">
+                            <div class="d-flex justify-content-between">
+                                    <span class="float-start price-hp py-2">USD 20.00</span>
+                                    <div class="remove py-2"><i class="bi bi-trash3"></i></div>  
+                            </div>
+                            <div class="row text-center d-flex justify-content-center mt-3">
+                                <div class="col-3 py-2">  
+                                    <button type="button" class="btn-primary"><i class="bi bi-dash"></i></button>
+                                </div>
+                                <div class="col-6 py-2"><span class="order-num  ">2</span></div>
+                                <div class="col-3 py-2"><button class="btn-primary"><i class="bi bi-plus"></i></button></div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="position-relative">
+            <div class="position-absolute top-50 start-50"><button class="btn btn-primary btn-proceed">Proceed to Checkout</button></div>
+          </div>
     </div>
 </section>
 
