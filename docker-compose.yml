@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    volumes:
+      - ./src:/src
+    ports:
+      - "80:8000"
+    image: app:clcwebsite
+    container_name: clcwebsite
+    command: gunicorn --bind 0.0.0.0:8000 core.wsgi --log-level=debug
