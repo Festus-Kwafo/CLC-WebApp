@@ -17,6 +17,7 @@ prometheus-client==0.14.1
 psycopg2-binary==2.9.3
 PyPDF2==2.3.1
 python-bidi==0.4.2
+python-dotenv
 pytz==2022.1
 reportlab==3.6.9
 requests==2.25.1
