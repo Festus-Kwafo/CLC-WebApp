@@ -16,6 +16,10 @@
   }
 
   @media (max-width: 420px){
+    .carousel-caption{
+  top: 20% !important;
+  transform: translateY(-20%) !important;
+}
     .sermon-section{
       width: 23em !important;
       height: 45em;
