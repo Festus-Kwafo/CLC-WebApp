@@ -8,6 +8,7 @@ class Event(models.Model):
     start_date = models.DateTimeField()
     end_date = models.DateTimeField()
     description = models.TextField()
+    main_event = models.BooleanField(default=False)
     image = models.ImageField(upload_to='images/')
 
     def __str__(self):

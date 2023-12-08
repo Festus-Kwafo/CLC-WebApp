@@ -9,12 +9,16 @@
     <img src="{%static 'images/pastor1.jpg' %}" class="desktop-img" alt="Sermon-img">
     <img src="{%static 'images/pastor2.jpg' %}" class="mobile-img active" alt="Sermon-img">
     <div class="layer"></div>
-    <div class="sermon-info pb-4 ms-2">
+    <div class="sermon-info pb-4 m-2">
         <button class="btn btn-accent btn-latest rounded-pill">Latest Episode</button>
-        <h3 class="sermon-title">Sharing the love of Christ</h3>
-        <div class="col">
-            <a type="button" class="btn-lg btn-primary m-1" href="">WATCH EPISODE</a>
-            <a type="button" class="btn-lg btn-outline m-1" href="">MORE SERMONS</a>
+        <h4 class="sermon-title">Sharing the love of Christ</h4>
+        <div class="row justify-content-center text-md-center">
+            <div class="col-md-6 col-sm-12 pb-2">
+            <a type="button" class="btn btn-primary w-100" href="#">Watch Sermon</a>
+        </div>
+            <div class="col-md-6 col-sm-12 ">
+            <a type="button" class="btn btn-white w-100" href="#">More Sermons</a>
+            </div>
         </div>
     </div>
 </div>
@@ -26,21 +30,32 @@
         <h2>Let’s tailor your Experience</h2>
         <div class="row">
             <div class="col-lg-8">
-                    <div class="card shadow rounded border-0">
-                        <a type="button" class="card-body" href="">
-                             <h4><i class="bi bi-geo-alt me-3"></i>Already part of a campus society?</h4>
+                    <div class="card shadow rounded-4 border-0">
+                        <a type="button" class="card-body" href="#">
+                            <div class="row">
+                                <div class="col-1 d-flex justify-content-content align-items-center"><i class="bi bi-geo-alt"></i></div>
+                                <div class="col-11"><h4>Already part of a department?</h4></div>
+                            </div>
                         </a>
                       </div>    
-                    <div class="card rounded  shadow mt-3 border-0 ">
-                        <a type="button" class="card-body " href="">
-                            <h4><i class="bi bi-person me-3"></i>Visitor here?</h4>
+                    <div class="card rounded-4  shadow mt-3 border-0 ">
+                        <a type="button" class="card-body " href="#">
+                            <div class="row">
+                                <div class="col-1 d-flex justify-content-content align-items-center"><i class="bi bi-person"></i></div>
+                                <div class="col-11"> <h4>Visitor here?</h4></div>
+                            </div>
+
                         </a>
                       </div>
-                      <div class="card rounded shadow mt-3 mb-3 border-0" >
-                        <a type="button" class="card-body " href="">
-                            <h4><i class="bi bi-heart-pulse me-3"></i>Join a group</h4>
+                      <div class="card rounded-4 shadow mt-3 mb-3 border-0">
+                        <a type="button" class="card-body" href="#">
+                            <div class="row">
+                                <div class="col-1 d-flex justify-content-content align-items-center"><i class="bi bi-heart-pulse"></i></div>
+                                <div class="col-11"><h4>Join a branch</h4></div>
+                            </div>
                         </a>
                       </div>
+
                   <div class="main-event">
                     <img src="{%static 'images/pastor.jpg' %}" class="desktop-img" alt="Sermon-img">
                     <img src="{%static 'images/pastor2.jpg' %}" class="mobile-img" alt="Sermon-img">
@@ -50,10 +65,9 @@
                         <a type="button" class="btn btn-primary" href="">Learn more</a>
                       </div>
                 </div>
-
             </div>
-            
-            <div class="announcement-section col-lg-4">
+
+            <div class=" container announcement-section col-lg-4">
                 <div class="row">
                   <div class="upcoming-event shadow">
                     <ul class="list-group list-group-flush">

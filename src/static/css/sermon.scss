@@ -4,16 +4,14 @@
 .sermon-banner{
     position: relative;
     font-family: "Inter", sans-serif;
-    margin-top: 5rem;
+    margin-top: 9rem;
     margin-bottom: 3rem;
     height: 680px;
     img{
-      position: absolute; 
-      top: 0; 
-      left: 0;
+      position: relative;
       width: 100%;
       height: 100%;
-      
+      object-fit: cover;
     }
     .mobile-img{
       display: none;

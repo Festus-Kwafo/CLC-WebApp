@@ -426,8 +426,28 @@ footer {
   font-weight: 600;
   border-radius: 8px;
   transition: transform .2s;
-  
 }
+
+.btn-white{
+  background-color: $white;
+  border: 3px solid $white;
+  color: $black;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform .2s;
+
+}
+
+.btn-white:hover{
+  background-color: $white;
+  border: 3px solid $white;
+  color: $black;
+  font-weight: 600;
+  border-radius: 8px;
+  transform: scale(1.04);
+}
+
+
 .btn-primary:hover{
   border: 3px solid $primary;
   transform: scale(1.04);
@@ -446,16 +466,22 @@ footer {
     color: $black;
 
   }
+
+  i{
+      font-size: 1.5rem;
+    }
   .card{
     transition: transform .4s;
     padding-top: 5px;
     width: 95%;
     margin: auto;
+    border-radius: 10px;
   }
 
   .card:hover{
     transform: scale(1.04);
   }
+
 }
 
 
