@@ -55,12 +55,12 @@
                       </div>
 
                   <div class="main-event">
-                    <img src="{%static 'images/Papa/Papa_home1.jpg' %}" class="desktop-img" alt="Sermon-img">
-                    <img src="{%static 'images/Papa/Papa_home1.jpg' %}" class="mobile-img" alt="Sermon-img">
+                    <img src="{{closest_event.image.url}}" class="desktop-img" alt="Sermon-img">
+                    <img src="{{closest_event.image.url}}" class="mobile-img" alt="Sermon-img">
                     <div class="event-info ms-3 mb-4">
                         <button class="btn btn-accent btn-latest rounded-pill">Conference</button>
-                        <h3 class="sermon-title">Help from Above</h3>
-                        <a type="button" class="btn btn-primary" href="">Learn more</a>
+                        <h3 class="sermon-title">{{closest_event.name}}</h3>
+                        <a type="button" class="btn btn-primary" href="#">Learn more</a>
                       </div>
                 </div>
             </div>
@@ -92,10 +92,10 @@
                   <div class="social-media text-center mt-3 shadow">
                       <h3 class="pt-2">Follow Christ’s Love Church</h3>
                     <div class=" d-flex justify-content-evenly py-3">
-                      <a href=""><i class='bx bxl-youtube'></i></a>
-                    <a href=""><i class='bx bxl-twitter'></i></a>
+                      <a href="https://www.youtube.com/@christsaboundinglovechurch"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://twitter.com/christslovech"><i class='bx bxl-twitter'></i></a>
                     <a href=""> <i class='bx bxl-facebook'></i></a>
-                    <a href=""> <img src="{%static 'images/Instagram.svg'%}" alt=""></a>
+                    <a href="https://www.instagram.com/christsaboundinglove/"> <img src="{%static 'images/Instagram.svg'%}" alt=""></a>
                     </div>
                   </div>
                   </div>

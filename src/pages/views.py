@@ -13,9 +13,11 @@ class IndexView(View):
         start_date = date.today()
         end_date = start_date + timedelta(days=30)
         events = Event.objects.filter(start_date__range=[start_date, end_date])
+        closest_event = Event.objects.filter(start_date__range=[start_date, end_date]).order_by('start_date')[0]
 
         context = {
-            'events': events
+            'events': events,
+            'closest_event': closest_event
         }
 
         return render(request, self.template_name, context)
