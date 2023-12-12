@@ -8,24 +8,7 @@ module.exports = {
         vendor: "./static/js/vendor.js",
     },
     output: {
-        filename: "js/[name].[contenthash].bundle.js",
+        filename: "js/[name].bundle.js",
         path: path.resolve(__dirname, "dist"),
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template:
-                "./templates/pages/base.html",
-            filename: "templates/pages/base.html",
-            publicPath: "/static/",
-            inject: "body"
-        }),
-        new HtmlWebpackPlugin({
-            template:
-                "./templates/dashboard/base.html",
-            filename: "templates/dashboard/base.html",
-            publicPath: "/static/",
-            inject: "body"
-        }),
-        new CleanWebpackPlugin(),
-    ],
 }

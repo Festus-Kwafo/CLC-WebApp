@@ -13,6 +13,24 @@ module.exports = merge(common, {
                     "sass-loader", // SCSS into CSS
                 ]
             }
-        ]
-    }
+        ],
+
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template:
+                "./templates/pages/base.html",
+            filename: "templates/pages/base.html",
+            publicPath: "/static/",
+            inject: "body"
+        }),
+        new HtmlWebpackPlugin({
+            template:
+                "./templates/dashboard/base.html",
+            filename: "templates/dashboard/base.html",
+            publicPath: "/static/",
+            inject: "body"
+        }),
+        new CleanWebpackPlugin(),
+    ],
 });
