@@ -19,3 +19,17 @@ class Event(models.Model):
 
     def get_date_range(self):
         return self.start_date.strftime('%b %d') + ' - ' + self.end_date.strftime('%b %d, %Y')
+
+
+class Message(models.Model):
+    title = models.CharField(max_length=200)
+    slug = models.SlugField(max_length=200, unique=True)
+    description = models.TextField()
+    published_date = models.DateTimeField()
+    cover_art = models.ImageField(upload_to='images/messages/')
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse('message', args=[str(self.slug)])
