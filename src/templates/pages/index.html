@@ -71,51 +71,22 @@
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item border-0 heading">
                         <h4>Upcoming Activities</h4>
-                        <p>Stay informed on all church activities and ocassions</p>
+                        <p>Stay informed on all church activities</p>
                         <hr>
                     </li>
+                        {% for event in events %}
                       <li class="list-group-item border-0">
                         <div class="row">
                             <div class="col-1"><i class='bx bx-chevron-right font-size-14'></i></div>
                         <div class="col-11">
-                            <h5>Prayer Retreat</h5>
-                            <span>Prayer retreat with Rev. Mubarak Kwota <br></span>
-                            <i class='bx bx-calendar me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">Mon - Fri</span>
-                            <i class='bx bx-time-five me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">6:30pm each night</span>
+                            <h5>{{ event.name}}</h5>
+                            <span>{{ event.description}}<br></span>
+                            <i class='bx bx-calendar me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">{{ event.get_date_range }}</span>
+                            <i class='bx bx-time-five me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">{{ event.get_time}}</span>
                         </div>
                         </div>
                     </li>
-                      <li class="list-group-item border-0">
-                        <div class="row">
-                            <div class="col-1"><i class='bx bx-chevron-right font-size-14'></i></div>
-                        <div class="col-11">
-                            <h5>Young People’s Week</h5>
-                            <span>Join us for exciting programs for YPW celebration<br></span>
-                            <i class='bx bx-calendar me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">Thur - Sat</span>
-                            <i class='bx bx-time-five me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">6:30pm each night</span>
-                        </div>
-                        </div>
-                    </li>
-                      <li class="list-group-item border-0">
-                        <div class="row">
-                            <div class="col-1"><i class='bx bx-chevron-right font-size-14'></i></div>
-                        <div class="col-11">
-                            <h5>Leader’s meeting</h5>
-                            <span>All organizational heads are encouraged to be present<br></span>
-                            <i class='bx bx-calendar me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">Mon</span>
-                            <i class='bx bx-time-five me-1 font-size-14 align-middle'></i><span class="me-3 align-middle ">8:00am</span>
-                        </div>
-                        </div>
-                    </li>
-                      <li class="list-group-item border-0">
-                        <div class="row">
-                            <div class="col-1"><i class='bx bx-chevron-right font-size-14'></i></div>
-                        <div class="col-11">
-                            <h5 ><a class="show-more" href="">Show More</a> </h5>
-                            <span>Learn more on other activities happening this week...<br></span>
-                        </div>
-                        </div>
-                    </li>
+                        {% endfor %}
                     </ul>
                   </div>
                   <div class="social-media text-center mt-3 shadow">

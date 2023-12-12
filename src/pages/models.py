@@ -18,14 +18,22 @@ class Event(models.Model):
         return reverse('event', args=[str(self.id)])
 
     def get_date_range(self):
+        if self.one_day:
+            return self.start_date.strftime('%b %d, %Y')
         return self.start_date.strftime('%b %d') + ' - ' + self.end_date.strftime('%b %d, %Y')
+
+    def get_time(self):
+        if self.one_day:
+            return self.start_date.strftime('%I:%M %p')
+        return self.start_date.strftime('%I:%M %p')
 
 
 class Message(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)
     description = models.TextField()
-    published_date = models.DateTimeField()
+    publish_date = models.DateTimeField()
+    published = models.BooleanField(default=False)
     cover_art = models.ImageField(upload_to='images/messages/')
 
     def __str__(self):

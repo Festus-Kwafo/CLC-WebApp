@@ -1,12 +1,24 @@
 from django.shortcuts import render
 from django.views import View
+from .models import Event, Message
+from datetime import date, timedelta
+
+
 
 # Create your views here.
 class IndexView(View):
     template_name = "templates/pages/index.html"
 
     def get(self, request):
-        return render(request, self.template_name)
+        start_date = date.today()
+        end_date = start_date + timedelta(days=30)
+        events = Event.objects.filter(start_date__range=[start_date, end_date])
+
+        context = {
+            'events': events
+        }
+
+        return render(request, self.template_name, context)
 
 class AboutView(View):
     template_name = "templates/pages/about.html"
