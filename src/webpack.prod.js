@@ -20,14 +20,14 @@ module.exports = merge(common, {
             template:
                 "./templates/pages/base.html",
             filename: "templates/pages/base.html",
-            publicPath: "https://clcweb-buckect.s3.amazonaws.com/static/",
+            publicPath: "https://clcweb-bucket.s3.eu-west-1.amazonaws.com/static/",
             inject: "body"
         }),
         new HtmlWebpackPlugin({
             template:
                 "./templates/dashboard/base.html",
             filename: "templates/dashboard/base.html",
-            publicPath: "https://clcweb-buckect.s3.amazonaws.com/static/",
+            publicPath: "https://clcweb-bucket.s3.eu-west-1.amazonaws.com/static/",
             inject: "body"
         }),
         new CleanWebpackPlugin(),
