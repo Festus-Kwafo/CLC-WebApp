@@ -6,3 +6,4 @@ src/core/.env
 db.sqlite3
 src/.env
 .env
+src/virtualenv
